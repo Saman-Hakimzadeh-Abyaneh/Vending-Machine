@@ -1,0 +1,25 @@
+﻿<Window x:Class="VendingMachine.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        mc:Ignorable="d" Title="MainWindow" Height="450" Width="600"
+        ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ContentControl
+            prism:RegionManager.RegionName="Header"
+            Margin="20,0"/>
+        <Separator
+            VerticalAlignment="Bottom"/>
+        <ContentControl
+            prism:RegionManager.RegionName="Body"
+            Grid.Row="1"
+            BorderThickness="0"
+            Margin="20,0"/>
+    </Grid>
+</Window>

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VendingMachine
+namespace VendingMachine.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for OrderView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OrderView : UserControl
     {
-        public MainWindow()
+        public OrderView()
         {
             InitializeComponent();
         }
